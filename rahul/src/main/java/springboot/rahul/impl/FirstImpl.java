@@ -3,8 +3,8 @@ package springboot.rahul.impl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-@Component
-private class FirstImpl implements FirstIF{
+@Component 
+class FirstImpl implements FirstIF{
 
 	@Autowired
 	FirstIF first;

@@ -10,11 +10,14 @@ this.testValue=value;
 this.anotherValue=value2;  
 
 }  
-  
+
+int getValue(){
+	return testValue;
+}
 public static void main(String args[]){  
 //for (Season s : Season.values())  
 //System.out.println(s+" "+s.testValue+" "+s.anotherValue);  
-System.out.println(Season.valueOf("WINTER"));  
+System.out.println(Season.valueOf("WINTER").anotherValue);  
 }
 }  
 
