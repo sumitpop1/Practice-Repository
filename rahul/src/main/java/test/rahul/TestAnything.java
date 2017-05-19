@@ -1,15 +1,8 @@
 package test.rahul;
 
-public class TestAnything {
-
-	public static void main(String[] args) {
-		int i = 10;
-		do{
-			System.out.println(i);
-			i--;
-		} while(i>0);
-
-		
-	}
-
+public interface TestAnything {
+	int i = 0;
+	static void display(){
+		System.out.println(i);
+	};
 }
