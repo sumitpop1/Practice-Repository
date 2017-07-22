@@ -13,6 +13,7 @@ public class ArrayListTest {
 		arrList.add(first);
 		arrList.add(second);
 		
+//		List l = new SynchronizedList(List l);
 		Iterator <Customer> iterator = arrList.iterator();
 		while(iterator.hasNext()){
 			Customer cust =  iterator.next();

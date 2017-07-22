@@ -15,7 +15,10 @@ public class GetDbImpl {
 		em.getTransaction().begin();
 		em.persist(info);
 		em.getTransaction().commit();
+		PersonalInfo resInfo = em.find(PersonalInfo.class, 1);
+		System.out.println(resInfo.getName());
 		em.close();
 		PersistenceManager.INSTANCE.close();
+
 	}
 }
